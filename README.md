@@ -12,25 +12,27 @@ A curated list of resources, tools, libraries, and projects related to the Bitco
 
 ## Contents
 
-- [Awesome BSV Blockchain](#awesome-bsv-blockchain)
-  - [Contents](#contents)
-  - [Introduction](#introduction)
-  - [Getting Started](#getting-started)
-  - [Development Libraries](#development-libraries)
-  - [Service \& Tools](#service--tools)
-  - [Oracles](#oracles)
-    - [Applications](#applications)
-  - [Social Media](#social-media)
-  - [Storage](#storage)
-  - [Commercial](#commercial)
-  - [Others \& Demos](#others--demos)
-  - [Explorers](#explorers)
-  - [Infrastructure](#infrastructure)
-  - [Projects](#projects)
-  - [Talks \& Blogs](#talks--blogs)
-  - [Community](#community)
-  - [Articles and Tutorials](#articles-and-tutorials)
-  - [Contribute](#contribute)
+
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Development Libraries](#development-libraries)
+- [Standard and Protocols](#standard-and-protocols)
+- [Service & Tools](#service-&-tools)
+- [Services For Developers](#services-for-developers)
+- [Oracles](#oracles)
+- [Bsv Blockchain Implementations](#bsv-blockchain-implementations)
+- [Social Media](#social-media)
+- [Storage](#storage)
+- [Commercial](#commercial)
+- [Others & Demos](#others-&-demos)
+- [Explorers](#explorers)
+- [Infrasturucture](#infrasturucture)
+- [Projects](#projects)
+- [Community](#community)
+- [Talks & Blogs](#talks-&-blogs)
+- [Articles and Tutorials](#articles-and-tutorials)
+- [Contribute](#contribute)
+
 
 ## Introduction
 
@@ -46,11 +48,13 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 
 ## Development Libraries
 
+
 - [Bitcoin SV Lib](https://github.com/moneybutton/bsv) - A pure and powerful JavaScript Bitcoin SV library. A fork of BitPay's bitcore-lib-cash, but for Bitcoin SV only. Maintained by Yours Inc.
 - [TxForge: Modern Bitcoin transaction builder](https://github.com/libitx/txforge) - capable of supporting any non-standard and custom script type.
 - [nimble](https://github.com/runonbitcoin/nimble) - A practical everyday js library
 - [sCrypt-TS SmartContracts Library](https://github.com/sCrypt.inc)
 - [sCrypt 1Sat Ordinals Library](https://github.com/sCrypt-Inc/scrypt-ord)
+
 - [Dart Library for Interacting with Bitcoin Network](https://github.com/twostack/dartsv)
 - [Twetch JavaScript Library](https://github.com/repcomm/twetch-js)
 - An internet archive tool that permanently timestamps and stores web pages and images directly onto bitcoin itself.
@@ -65,11 +69,30 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 - ECIES - Encrypt message with Bitcoin PublicKey, decrypt it with PrivateKey. BIE1 format, Electrum/Electron Cash Compatible. [JavaScript](https://github.com/monkeylord/electrum-ecies)/[Go](https://github.com/gitzhou/bitcoin-ecies)
 - [Polynym](https://polynym.io/) - Simple BSV address resolution for Twetch, HandCash, RelayX and PayMail handles.
 - [Go Bitcoin](https://gobitcoinsv.com) - Bitcoin libraries in Golang.
-- [Sendover](https://github.com/p2ppsr/sendover) type-42 key derivation library.
-- [Babbage SDK](https://github.com/p2ppsr/babbage-sdk) for building Bitcoin SV apps.
-- [Flutter BSV](https://github.com/Dhuliang/flutter-bsv) - Dart library for Bitcoin SV apps.
-- [LinkSV](https://www.npmjs.com/package/linksv) - A Bitcoin SV (BSV) data protocol for effortless reads, writes and updates. Write any arbitrary javascript class value to the blockchain and easily update it, leaving an immutable audit trail.
-- [Bitindex JavaScript Library](https://github.com/bitindex/bitindex-sdk-js)
+
+
+## Standard And Protocols
+
+- [BSV Wiki](https://wiki.bitcoinsv.io/) – Aim to provide correct and up-to-date information on the Bitcoin protocol, network, and its features and functionality.
+- [Merchant API[(https://github.com/bitcoin-sv-specs/brfc-merchantapi) (mAPI) – Is an additional service miners can offer to merchants, enabling them to get policy and fee quotes for submitting transactions and query their status.
+- [Paymail](https://tsc.bsvblockchain.org/standards/paymail/) – A collection of protocols for BSV blockchain wallets that allow for a set of simplified user experiences to be delivered across all wallets in the ecosystem.
+- [Metanet](https://wiki.bitcoinsv.io/index.php/Metanet_Protocol) – The Metanet protocol is a layer two overlay protocol that defines a method for creating data structures over the BSV blockchain.
+- [Envelope Specification](https://tsc.bsvblockchain.org/standards/envelope-specification/) – This standard aims to provide a framework for specifying different protocols embedded in Bitcoin transactions.
+- [Peer Channels](https://www.bsvblockchain.org/features/peer-channel) – These offer encrypted persistent messaging between BSV users, integrating offline and direct communications to enable the peer-to-peer interactions Satoshi described as fundamental to the Bitcoin network.
+  
+
+## Services For Developers
+
+- [TAAL](https://taal.com/) is a key miner in the space, but it also has a platform with various services for developers. As well as a wallet, there’s the STAS SDK, token service API, tools for managing transactions, and more.
+- [Bitcoin analytics] like BSVdata.com give a better view of what’s happening on an application level. This can help developers check on how successful their applications are in reality.
+- [JungleBus](https://coingeek.com/how-junglebus-indexes-bitcoin-internet-of-value-workshop/) is a powerful, low-level indexer to power lightweight Bitcoin data sets.
+- [Bitails] is a BSV archive, indexer, and UTXO manager that provides APIs, sockets, and other features for developers and companies working on the BSV blockchain.
+- [HandCash Connect] is an SDK that connects to an API. It gives developers access to a powerful, easy-to-use wallet-as-a-service.
+- [Relysia] helps businesses process BSV blockchain payments. It’s a one-stop-shop in terms of API and SDK.
+- [Tokenized] is a Smart Contracting platform-as-a-service as well as a wallet-as-a-service. It enables anyone to easily issue, manage, and trade digital assets and is based on the Tokenized protocol.
+
+
+
 
 ## Service & Tools
 
@@ -80,6 +103,14 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 - [BSV Wallet](https://bsvwallet.dev/)
 - [MetaID - Identity Protocol](https://metaid.app/)
 - [Authrite](https://brc.dev/31) identity protocol
+
+
+## BSV Blockchain Implementations
+
+- [sCrypt](scrypt.io) is a Typescript framework to write smart contracts on a Bitcoin Virtual Machine. It’s a high-level language much more like Javascript or Typescript, making it much more familiar and easy than Bitcoin’s native Script.
+- [Bitcoin Reader] is a light node that lets you read the traffic and transactions on the network. It’s something like a light node. Again, it’s open source and can be used for free.
+- [Tx Forge](https://github.com/runonbitcoin/nimble) is a modern Bitcoin transaction builder. It’s capable of supporting any non-standard and custom script type. It’s built on the Nimble library.
+- [BSVLIB] is a BSV Python library. It has key management, digital signatures, standard script types, integrations with APIs, and more.
 
 ## Oracles
 
@@ -137,8 +168,11 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 ## Explorers
 
 - [Whatsonchain](https://whatsonchain.com/)
-- [Bitails](https://explorer.bitails.io)
-- [Satoshi](https://satoshi.io)
+- [Bitails](https://explorer.bitails.io
+- [Satoshi](https://Satoshi.io)
+- [Bitindex Explorer](https://bitindex.network/)
+- [Blockchair BSV Explorer](https://blockchair.com/bitcoin-sv)
+
 
 ## Infrastructure
 
@@ -153,7 +187,6 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 ## Projects
 
 - [BSV DevCon](https://bsvdevcon.net/)
-- [sCrypt - SmartContracts Tooling](https://scrypt.io)
 - [Bitping - Network Monitoring](https://bitping.com/)
 - [Baemail - Encrypted Messaging](https://baemail.me/)
 - [WeatherSV - Weather Data on BSV](https://weathersv.app/)
@@ -161,7 +194,7 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 - [B Protocol](https://github.com/unwriter/B) - Bitcoin Simple Storage Protocol. [Try it](https://b.bitdb.network)
 - [Datapay](https://github.com/unwriter/datapay) - Build and broadcast data transactions to the Bitcoin SV blockchain.
 - [Planaria](https://planaria.network/) - Infinite API over Bitcoin.
-- [paymail](https://github.com/bitcoin-sv-specs/paymail) - BSV paymail protocol. [express implementation](https://github.com/moneybutton/express-paymail) [client](https://github.com/moneybutton/paymail-client)
+-  [express implementation](https://github.com/moneybutton/express-paymail) [client](https://github.com/moneybutton/paymail-client)
 - [bottle](https://github.com/interplanaria/bottle) - A bitcoin browser.
 - [BSV Editor](http://www.bowmain.co.uk/BSV/index.html) - A Bitcoin script compiler/debugger with GUI.
 - [planter](https://github.com/MerlinB/planter) - A library for fetching and creating Metanet nodes on the Bitcoin SV blockchain.
