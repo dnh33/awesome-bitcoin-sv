@@ -179,7 +179,7 @@ Bitcoin SV (BSV) is a blockchain that aims to maintain the original vision of Bi
 ## Explorers
 
 - [Whatsonchain](https://whatsonchain.com/)
-- [Bitails](https://explorer.bitails.io
+- [Bitails](https://explorer.bitails.io)
 - [Satoshi](https://Satoshi.io)
 - [Bitindex Explorer](https://bitindex.network/)
 - [Blockchair BSV Explorer](https://blockchair.com/bitcoin-sv)
